@@ -12,7 +12,7 @@ cs_add_library(${PROJECT_NAME}
 )
 
 cs_add_executable(zr300_node src/zr300-node.cc)
-target_link_libraries(zr300_node ${PROJECT_NAME})
+target_link_libraries(zr300_node ${PROJECT_NAME} /usr/lib/librealsense.so)
 
 cs_install()
 cs_export()
