@@ -160,11 +160,11 @@ void ZR300::configureStaticOptions() {
 
   // Configure color.
   zr300_device_->set_option(
-      rs::option::fisheye_enable_auto_exposure,
+      rs::option::fisheye_color_auto_exposure,
       config_.fisheye_enable_auto_exposure);
-  zr300_device_->set_option(rs::option::fisheye_auto_exposure_mode, 2);
+  zr300_device_->set_option(rs::option::fisheye_color_auto_exposure_mode, 2);
   // Flicker rate of ambient light.
-  zr300_device_->set_option(rs::option::fisheye_auto_exposure_antiflicker_rate, 50);
+  zr300_device_->set_option(rs::option::fisheye_color_auto_exposure_rate, 50);
 
   // Configure depth.
   zr300_device_->set_options(
